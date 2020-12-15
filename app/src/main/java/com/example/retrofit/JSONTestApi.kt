@@ -5,9 +5,9 @@ import retrofit2.http.GET
 
 interface JSONTestApi {
 
-    @GET("http://date.jsontest.com/?service=date")
+    @GET("?service=date")
     fun getDate(): Single<DateModel>
 
-    @GET("http://date.jsontest.com/?service=ip")
+    @GET("?service=ip")
     fun getIp(): Single<IpModel>
 }
